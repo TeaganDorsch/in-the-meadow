@@ -1,0 +1,83 @@
+- id: salad_leaves
+  name: Salad leaves
+  category: veg
+  difficulty: forgiving
+  time_to_result_days: 30
+  rules:
+    min_soil_temp_c: 5
+    frost-tolerant: true
+    season_start: early_spring
+    season_end: summer
+    preferred_method: direct
+    notes:
+      - "Sow little and often for steady harvests."
+
+- id: radish
+  name: Radish
+  category: veg
+  difficulty: forgiving
+  time_to_result_days: 28
+  rules:
+    min_soil_temp_c: 6
+    frost-tolerant: true
+    season_start: early_spring
+    season_end: summer
+    preferred_method: direct
+    notes:
+      - "Fast wins. Great confidence-boost crop."
+
+- id: peas
+  name: Peas
+  category: veg
+  difficulty: forgiving
+  time_to_result_days: 75
+  rules:
+    min_soil_temp_c: 7
+    frost-tolerant: true
+    season_start: early_spring
+    season_end: summer
+    preferred_method: direct
+    notes:
+      - "Happy in cool weather"
+
+- id: courgette
+  name: Courgette
+  category: veg
+  difficulty: moderate
+  time_to_result_days: 55
+  rules:
+    min_soil_temp_c: 12
+    frost-tolerant: false
+    season_start: mid_spring
+    season_end: late_spring
+    preferred_method: indoors
+    notes:
+      - "Warmth-lover. Start under cover if nights are cold."
+
+- id: cosmos
+  name: Cosmos
+  category: flower
+  difficulty: forgiving
+  time_to_result_days: 80
+  rules:
+    min_soil_temp_c: 12
+    frost-tolerant: false
+    season_start: mid_spring
+    season_end: late_spring
+    preferred_method: indoors
+    notes:
+      - "Cut-and-come-gain flowers. Lovely for beginners."
+
+- id: sweet_pea
+  name: Sweet pea
+  category: flower
+  difficulty: moderate
+  time_to_result_days: 90
+  rules:
+    min_soil_temp_c: 7
+    frost-tolerant: true
+    season_start: early_spring
+    season_end: mid_spring
+    preferred_method: either
+    notes:
+      - "Strong growers with support. Worth it."

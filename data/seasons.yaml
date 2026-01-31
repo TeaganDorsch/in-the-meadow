@@ -1,0 +1,22 @@
+# Seasons are defined relative to the region's aerage last frost date.
+# Offests are in days from avg_last_frost (negative = before, positive = after).
+
+early_spring:
+  label: Early spring
+  start_offset_days: -42
+  end_offset_days: -14
+
+mid_spring:
+  label: Mid spring
+  start_offset_days: -14
+  end_offset_days: 21
+
+late_spring:
+  label: Late spring
+  start_offset_days: 21
+  end_offset_days: 56
+
+summer:
+  label: Summer
+  start_offset_days: 56
+  end_offset_days: 140

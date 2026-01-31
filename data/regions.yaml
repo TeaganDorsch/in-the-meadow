@@ -1,0 +1,14 @@
+- id: north_west_england
+  name: North West England
+  avg_last_frost: "2025-04-15"
+  climate_zone: temperate_maritime
+
+- id: south_east_england
+  name: South East England
+  avg_last_frost: "2025-03-31"
+  climate_zone: temperate_maritime
+
+- id: scotland_central
+  name: Central Scotland
+  avg_last_frost: "2025-04-30"
+  climate_zone: temperate_maritime
