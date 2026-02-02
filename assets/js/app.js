@@ -1,3 +1,5 @@
+import { classifyPlant } from "./plantingLogic.js";
+
 function getSeasonFromOffset(daysFromLastFrost, seasons) {
   for (const key in seasons) {
     const season = seasons[key];
@@ -45,4 +47,13 @@ Promise.all([
   );
 
   console.log("Current season:", currentSeason);
+
+  const context = {
+  season: currentSeason
+  };
+
+  plants.forEach(plant => {
+    const result = classifyPlant(plant, context);
+    console.log(plant.name, "-", result);
+  });
 })
