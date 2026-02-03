@@ -57,7 +57,7 @@ Promise.all([
     const li = document.createElement("li");
 
     li.innerHTML = `
-      <strong>${plant.name}</strong><br></br>
+      <strong>${plant.name}</strong><br>
       <span>${result.message}</span>
     `;
 
