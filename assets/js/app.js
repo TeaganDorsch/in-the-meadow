@@ -52,14 +52,31 @@ Promise.all([
   season: currentSeason
   };
 
+  function addPlantsToSection(sectionId, plant, result) {
+    const section = document.querySelector(`#${sectionId} ul`);
+    const li = document.createElement("li");
+
+    li.innerHTML = `
+      <strong>${plant.name}</strong><br></br>
+      <span>${result.message}</span>
+    `;
+
+    section.appendChild(li);
+  }
+
   plants.forEach(plant => {
     const result = classifyPlant(plant, context);
-    console.log(
-      plant.name,
-      "→",
-      result.status,
-      "|",
-      result.message
-    );
+
+    if (result.status === "good_now") {
+      addPlantsToSection("good-now", plant, result);
+    }
+
+    if (result.status === "start_indoors") {
+      addPlantsToSection("start-indoors", plant, result);
+    }
+
+    if (result.status === "wait") {
+      addPlantsToSection("wait", plant, result);
+    }
   });
 })
