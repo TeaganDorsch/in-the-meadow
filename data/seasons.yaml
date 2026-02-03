@@ -24,9 +24,14 @@ summer:
 autumn:
   label: Autumn
   start_offset_days: 140
-  end_offset_days: 220
+  end_offset_days: 200
 
 winter:
   label: Winter
-  start_offset_days: 220
-  end_offset_days: 365
+  start_offset_days: 200
+  end_offset_days: 280
+
+late_winter:
+  label: Late Winter
+  start_offset_days: 280
+  end_offset_days: 340

@@ -54,6 +54,12 @@ Promise.all([
 
   plants.forEach(plant => {
     const result = classifyPlant(plant, context);
-    console.log(plant.name, "-", result);
+    console.log(
+      plant.name,
+      "→",
+      result.status,
+      "|",
+      result.message
+    );
   });
 })

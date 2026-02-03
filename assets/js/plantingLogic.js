@@ -7,6 +7,7 @@ export const RECOMMENDATION = {
 export function isSeasonInRange(currentSeason, startSeason, endSeason) {
   const order = [
     "winter",
+    "late_winter",
     "early_spring",
     "mid_spring",
     "late_spring",
@@ -32,7 +33,10 @@ export function classifyPlant(plant, context) {
       rules.season_end
     )
   ) {
-    return RECOMMENDATION.WAIT;
+    return {
+      status: RECOMMENDATION.WAIT,
+      message: "It's still a little early for this one here."
+    };
   }
 
   // 2. Frost-sensitive plants in winter
@@ -40,9 +44,15 @@ export function classifyPlant(plant, context) {
     context.season === "winter" &&
     !rules.frost_tolerant
   ) {
-    return RECOMMENDATION.START_INDOORS;
+    return {
+      status: RECOMMENDATION.START_INDOORS,
+      message: "Still wintery outside — this one likes a gentle start indoors."
+    };
   }
 
   // 3. Default case
-  return RECOMMENDATION.GOOD_NOW
+  return {
+    status: RECOMMENDATION.GOOD_NOW,
+    message: "Conditions are fine for sowing this now."
+  };
 }

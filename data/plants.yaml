@@ -34,7 +34,7 @@
   rules:
     min_soil_temp_c: 7
     frost-tolerant: true
-    season_start: early_spring
+    season_start: late_winter
     season_end: summer
     preferred_method: direct
     notes:
@@ -76,7 +76,7 @@
   rules:
     min_soil_temp_c: 7
     frost-tolerant: true
-    season_start: early_spring
+    season_start: late_winter
     season_end: mid_spring
     preferred_method: either
     notes:
