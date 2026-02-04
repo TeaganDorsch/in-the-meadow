@@ -52,6 +52,21 @@ Promise.all([
   season: currentSeason
   };
 
+  const seasonIntro = document.getElementById("season-intro");
+
+  const seasonMessages = {
+    winter: "It’s deep winter here. A good time to rest, plan, and begin a few things gently indoors.",
+    late_winter: "Late winter is a threshold — some hardy seeds can begin now, while others are still gathering strength.",
+    early_spring: "Early spring brings small openings. The soil is waking, slowly.",
+    mid_spring: "Spring is properly underway now, with plenty of seeds ready to go.",
+    late_spring: "Warmth is building and growth is quickening.",
+    summer: "Summer sowing is about succession and keeping things going.",
+    autumn:"Autumn is a time to start begging to harvest all of your hardwork"
+  };
+
+  seasonIntro.textContent =
+    seasonMessages[currentSeason] || "";
+
   function addPlantsToSection(sectionId, plant, result) {
     const section = document.querySelector(`#${sectionId} ul`);
     const li = document.createElement("li");

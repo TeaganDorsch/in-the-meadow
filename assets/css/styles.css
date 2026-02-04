@@ -22,8 +22,20 @@ section {
   border-top: 1px solid #ddd;
 }
 
-sectoin:first-of-type {
+section:first-of-type {
   border-top: none;
+}
+
+#season-intro {
+  font-style: italic;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.section-intro {
+  margin-bottom: 1rem;
+  color: #555;
+  font-size: 0.95rem;
 }
 
 h1 {

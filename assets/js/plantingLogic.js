@@ -35,7 +35,7 @@ export function classifyPlant(plant, context) {
   ) {
     return {
       status: RECOMMENDATION.WAIT,
-      message: "It's still a little early for this one here."
+      message: "This one prefers a little more warmth and will be happier later."
     };
   }
 
@@ -46,13 +46,13 @@ export function classifyPlant(plant, context) {
   ) {
     return {
       status: RECOMMENDATION.START_INDOORS,
-      message: "Still wintery outside — this one likes a gentle start indoors."
+      message: "This one likes a gentle start indoors espeically if it's still wintery outside."
     };
   }
 
   // 3. Default case
   return {
     status: RECOMMENDATION.GOOD_NOW,
-    message: "Conditions are fine for sowing this now."
+    message: "This is a perfect time to start planting these outdoors."
   };
 }
